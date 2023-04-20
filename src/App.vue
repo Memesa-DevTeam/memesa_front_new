@@ -1,20 +1,10 @@
 <script setup>
 import { RouterView } from 'vue-router';
-import HelloWorld from './components/HelloWorld.vue'
-import { Button } from 'ant-design-vue';
+import HeaderBox from '@/components/HeaderBox.vue'
 </script>
 
 <template>
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-  <Button type="primary">This is a test button</Button> -->
+  <HeaderBox></HeaderBox>
   <RouterView>
 
   </RouterView>

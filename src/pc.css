@@ -1,0 +1,50 @@
+:root{
+    /*Color Definitions*/
+    --main-color: #ff9900;
+}
+.title-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: fit-content;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--main-color);
+}
+.search-box{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+.search-input-area{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+}
+.search-suggestion-box{
+    display: flex;
+    width: auto;
+    height: fit-content;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.title-features-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+.title-features-item{
+    margin-right: 5px;
+    height: 40px;
+}
