@@ -3,9 +3,14 @@ import Homepage from '../views/HomePage.vue'
 
 const routers = [
     {
-        path: "/",
-        name: "home",
-        component: Homepage
+      path: "/",
+      name: "home",
+      component: Homepage
+    },
+    {
+      path: "/profile",
+      name: "profile",
+      component: ()=>import('../views/User/ProfilePage.vue')
     }
 ]
 

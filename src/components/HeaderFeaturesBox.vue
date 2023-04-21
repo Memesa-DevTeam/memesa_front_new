@@ -33,7 +33,7 @@
                     <img src="@/assets/icon/more.svg" :width="30" class="title-features-item" @click="triggerOverlay()">
                 </div>
             </Tooltip>
-            <RouterLink to="">
+            <RouterLink to="/profile">
                 <Tooltip>
                     <template #title>
                         用户中心

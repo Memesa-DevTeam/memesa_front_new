@@ -1,0 +1,147 @@
+{
+    "test": {
+        "greetings": "Hello Memesa"
+    },
+    "HeaderBox": {
+        "searchBar": "Search meme, music, or videos",
+        "history": "History",
+        "moments": "Moments",
+        "workManager": "Work Manager",
+        "userAvatar": {
+            "title": "Profile",
+            "tips": "Click to enter your profile!",
+            "loginTips": "Login to access full function of Memesa",
+            "login": "Login",
+            "register": "Sign Up",
+            "gotoUserHomepage": "Goto Profile",
+            "exit": "Logout"
+        }
+    },
+    "Login": {
+        "title": "Login",
+        "description": "Login here, or create a new account",
+        "usernamePlaceHolder": "Username",
+        "passwordPlaceHolder": "Password",
+        "rememberMeCheckBx": "Remember me",
+        "loginBtn": "Login",
+        "registerBtn": "Sign Up",
+        "successModal": {
+            "title": "Success",
+            "description": "Now you can access to the full features of memewsa",
+            "continueBtn": "Open Profile"
+        },
+        "message": {
+            "success": "Success",
+            "failed": "Username or password does not match"
+        }
+    },
+    "LoginRequireBox": {
+        "title": "You are not login yet...",
+        "description": "Login to Memesa to access full features.",
+        "login": "Login",
+        "middleword": "or",
+        "register": "Register"
+    },
+    "RegisterPage": {
+        "title": "Sign Up to Memesa",
+        "description": "Welcome to Memesa, a freely meme artwork sharing website. In dorder to create your account, we will collect some of your information",
+        "input": {
+            "username": "Username",
+            "email": "Email",
+            "password": "Password"
+        },
+        "agreement": "I Agreed Terms of User Agreement and Privacy Policies",
+        "register": "Sign Up",
+        "isAccountExisted": "Already a member?",
+        "login": "Login",
+        "hidden": {
+            "nullInputError": "You must filled up all the blanks to sign up.",
+            "success": "Sign Up Success",
+            "failed": "Sign up failed: Username is already taken."
+        }
+    },
+    "UserHomepage": {
+        "title": "Profile",
+        "mainBox": {
+            "avatarOccupation": "Login",
+            "modifyUserInfoBtn": "Modify my Profile",
+            "followingNum": "Following",
+            "followerNum": "Followers",
+            "videoNum": "Videos"
+        },
+        "history": {
+            "title": "History",
+            "description": "Your recently played video will appears here",
+            "emptyOccupation": "Nothing but air here...",
+            "moreHistoryBtn": "View more history"
+        },
+        "favorite": {
+            "title": "Favorites",
+            "description": "Favorite a video and they will appears here",
+            "emptyOccupation": "Nothing but air here... Why not create a collection first?",
+            "checkAllBtn": "View all favorites",
+            "createNewBtn": "Create new collections"
+        },
+        "moments": {
+            "title": "Moments",
+            "description": "Your recent moments will appear here. For more mements, please visit Moments page.",
+            "gotoMomentsBtn": "View my moments"
+        },
+        "moreFeatures": {
+            "title": "More",
+            "workManager": "My Videos",
+            "settings": "Settings",
+            "account": "Account",
+            "qa": "FAQ",
+            "beta": "Beta"
+        },
+        "messages": {
+            "cannotGatherInfo": "Oh no, we can't gather your profile right now..."
+        },
+        "hidden": {
+            "username": "Not Logged in",
+            "email": "Unknown",
+            "userid": "Unknown",
+            "description": "He / She left nothing here... That's auwful bro!"
+        }
+    },
+    "MomentsBox": {
+        "viewDetails": "More",
+        "delete": "Delete",
+        "detailsDrawer": {
+            "title": "Moments Details",
+            "comments": "Comment",
+            "releaseComment": "Send",
+            "placeholder": "Enter comments here..."
+        },
+        "hidden":{
+            "deleteSuccess": "Delete Successfully",
+            "deleteFailed": "Unable to delete"
+        }
+    },
+    "MyMoments": {
+        "sendNewMoments": "发布新动态",
+        "emptyResult": {
+            "title": "你还没有发布过动态",
+            "subTitle": "点击左上方发布按钮发布你的第一个动态吧！"
+        }
+    },
+    "SendMoments": {
+        "title": "发布新动态",
+        "textAreaPlaceholder": "说些什么吧",
+        "publicSwitch": {
+            "description": "公开的动态可以被社区内所有的人看到。若不希望请关闭此选项！",
+            "purpose": "这个动态是公开的"
+        },
+        "submit": "发布",
+        "cancel": "取消",
+        "hidden": {
+            "pictureWarning": "目前只能上传图片哦QAQ",
+            "bigFileWarning": "文件太大啦！",
+            "waitUpload": "请等待所有图片上传完成",
+            "uploadError": "上传失败",
+            "success": "发布成功",
+            "failed": "发布失败"
+        }
+    }
+}

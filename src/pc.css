@@ -2,17 +2,26 @@
 :root{
     /*Color Definitions*/
     --main-color: #ff9900;
+    --gray-color: #ebebeb;
     --search-box-width: 600px;
 }
 #pc-hidden{
     display: none;
 }
 .main-view{
-    height: 100%;
+    margin: 20px;
+    margin-top: 80px;
+}
+.page-title{
+    font-weight: 700;
 }
 /* Title Box Section */
 .title-box{
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     flex-direction: row;
     justify-content: space-between;
     width: auto;
@@ -23,6 +32,7 @@
     padding-left: 10px;
     padding-right: 10px;
     background-color: var(--main-color);
+    z-index: 1000;
 }
 .search-box{
     display: flex;
@@ -65,4 +75,34 @@
 .title-features-item{
     margin-right: 5px;
     height: 40px;
+}
+
+/* User Info Card */
+.user-info-card{
+    margin: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    background-color: var(--gray-color);
+    width: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-info-content{
+    display: flex;
+    flex-direction: column;
+}
+.user-info-left-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-info-brief-data{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
 }

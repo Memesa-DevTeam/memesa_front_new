@@ -6,9 +6,12 @@ import MobileFooter from './components/MobileFooter.vue';
 
 <template>
   <HeaderBox></HeaderBox>
-  <RouterView>
+  <div class="main-view">
+    <RouterView>
 
-  </RouterView>
+    </RouterView>
+  </div>
+  
 </template>
 
 <style scoped>

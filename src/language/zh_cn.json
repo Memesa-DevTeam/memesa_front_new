@@ -1,0 +1,147 @@
+{
+    "test": {
+        "greetings": "你好Memesa"
+    },
+    "HeaderBox": {
+        "searchBar": "搜索手书，音乐，或者视频",
+        "history": "历史记录",
+        "moments": "动态",
+        "workManager": "稿件管理",
+        "userAvatar": {
+            "title": "个人主页",
+            "tips": "点击进入个人中心",
+            "loginTips": "登录即可访问全部功能哦！",
+            "login": "登录",
+            "register": "注册",
+            "gotoUserHomepage": "前往个人主页",
+            "exit": "退出登录"
+        }
+    },
+    "Login": {
+        "title": "登录Memesa",
+        "description": "在这里登录，或注册一个账号",
+        "usernamePlaceHolder": "用户名",
+        "passwordPlaceHolder": "密码",
+        "rememberMeCheckBx": "记住我",
+        "loginBtn": "登录",
+        "registerBtn": "注册",
+        "successModal": {
+            "title": "登录成功！",
+            "description": "您现在可以访问所有的Memesa功能了。",
+            "continueBtn": "前往个人主页"
+        },
+        "message": {
+            "success": "登录成功",
+            "failed": "用户名或密码错误"
+        }
+    },
+    "LoginRequireBox": {
+        "title": "你还没有登录哦",
+        "description": "登录Memesa即可解锁网站的全部功能！",
+        "login": "立即登录",
+        "middleword": "或",
+        "register": "注册一个账号"
+    },
+    "RegisterPage": {
+        "title": "注册Memesa",
+        "description": "欢迎来到Memesa，一个自由的手书分享网站！通过填写以下信息即可完成注册。",
+        "input": {
+            "username": "用户名",
+            "email": "邮箱",
+            "password": "密码"
+        },
+        "agreement": "我已同意《用户使用协议与条款》",
+        "register": "注册",
+        "isAccountExisted": "已有账号？",
+        "login": "登录",
+        "hidden": {
+            "nullInputError": "用户名，邮箱，密码为必填字段",
+            "success": "注册成功",
+            "failed": "注册失败：用户名不合法或已经被占用"
+        }
+    },
+    "UserHomepage": {
+        "title": "我",
+        "mainBox": {
+            "avatarOccupation": "登录",
+            "modifyUserInfoBtn": "修改我的个人资料",
+            "followingNum": "关注",
+            "followerNum": "粉丝",
+            "videoNum": "稿件"
+        },
+        "history": {
+            "title": "播放历史",
+            "description": "播放过的视频将会出现在这里",
+            "emptyOccupation": "这里空空如也",
+            "moreHistoryBtn": "查看更多历史"
+        },
+        "favorite": {
+            "title": "收藏",
+            "description": "喜欢的视频或者音频可以放在收藏夹里哦",
+            "emptyOccupation": "这里空空如也，要不咱先创建一个收藏夹？",
+            "checkAllBtn": "查看所有收藏",
+            "createNewBtn": "创建新的收藏夹"
+        },
+        "moments": {
+            "title": "我的动态",
+            "description": "最近的动态将会展示在这里，更多历史动态请前往动态页面",
+            "gotoMomentsBtn": "前往动态"
+        },
+        "moreFeatures": {
+            "title": "更多功能",
+            "workManager": "创作者中心",
+            "settings": "设置",
+            "account": "账号选项",
+            "qa": "答疑中心",
+            "beta": "测试"
+        },
+        "messages": {
+            "cannotGatherInfo": "哦不！我们暂时无法获取你的个人信息"
+        },
+        "hidden": {
+            "username": "未登录",
+            "email": "未知邮箱",
+            "userid": "未知UID",
+            "description": "这个人很懒，什么也没写……"
+        }
+    },
+    "MomentsBox": {
+        "viewDetails": "查看详细信息",
+        "delete": "删除",
+        "detailsDrawer": {
+            "title": "详情",
+            "comments": "评论",
+            "releaseComment": "发布",
+            "placeholder": "说些什么吧"
+        },
+        "hidden":{
+            "deleteSuccess": "删除成功",
+            "deleteFailed": "删除失败"
+        }
+    },
+    "MyMoments": {
+        "sendNewMoments": "发布新动态",
+        "emptyResult": {
+            "title": "你还没有发布过动态",
+            "subTitle": "点击左上方发布按钮发布你的第一个动态吧！"
+        }
+    },
+    "SendMoments": {
+        "title": "发布新动态",
+        "textAreaPlaceholder": "说些什么吧",
+        "publicSwitch": {
+            "description": "公开的动态可以被社区内所有的人看到。若不希望请关闭此选项！",
+            "purpose": "这个动态是公开的"
+        },
+        "submit": "发布",
+        "cancel": "取消",
+        "hidden": {
+            "pictureWarning": "目前只能上传图片哦QAQ",
+            "bigFileWarning": "文件太大啦！",
+            "waitUpload": "请等待所有图片上传完成",
+            "uploadError": "上传失败",
+            "success": "发布成功",
+            "failed": "发布失败"
+        }
+    }
+}
