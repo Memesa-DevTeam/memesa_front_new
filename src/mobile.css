@@ -2,7 +2,8 @@
 :root{
     /*Color Definitions*/
     --main-color: #ff9900;
-    --search-box-width: 300px;
+    --search-box-width: 250px;
+    --transparent-bg: rgba(255, 255, 255, 0.85);
 }
 #mobile-hidden{
     display:none;
@@ -41,7 +42,7 @@
 }
 .search-input-area Input{
     margin-right: 5px; 
-    background-color: rgba(255, 255, 255, 0.85); 
+    background-color: var(--transparent-bg); 
     display: inline-block;
 }
 .search-suggestion-box{
@@ -52,10 +53,14 @@
     border-radius: 5px;
     top: 50px;
     padding: 7px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: var(--transparent-bg);
     border-style: solid;
     border-width: 1px;
     border-color: var(--main-color);
+}
+.title-features-main-box{
+    display: flex;
+    flex-direction: column;
 }
 .title-features-box{
     display: flex;
@@ -66,6 +71,21 @@
 .title-features-item{
     margin-right: 5px;
     height: 40px;
+}
+.overlay-function-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--transparent-bg);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--main-color);
+    align-items: center;
 }
 
 /* Mobile Footer Section */

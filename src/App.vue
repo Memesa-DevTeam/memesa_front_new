@@ -9,7 +9,6 @@ import MobileFooter from './components/MobileFooter.vue';
   <RouterView>
 
   </RouterView>
-  <!-- <MobileFooter/> -->
 </template>
 
 <style scoped>
