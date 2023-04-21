@@ -1,13 +1,13 @@
 <template>
     <div class="search-box">
         <div class="search-input-area">
-            <Input placeholder="搜索手书，音乐，或者是主题" style="width: 600px; margin-right: 5px; background-color: rgba(255, 255, 255, 0.85);" v-model:value="inputSearchValue"/>
-            <Button ghost>
+            <Input placeholder="搜索手书，音乐，或者是主题" v-model:value="inputSearchValue"/>
+            <Button ghost style="display: inline-block;">
                 <img src="@/assets/icon/search.svg">
             </Button>
         </div>
         <div class="search-suggestion-box" v-if="inputSearchValue">
-            This is the search suggestion box
+            {{ inputSearchValue }} 的搜索结果：
         </div>
     </div>
 </template>

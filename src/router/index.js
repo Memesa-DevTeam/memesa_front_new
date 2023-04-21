@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Homepage from '../views/home.vue'
+import Homepage from '../views/HomePage.vue'
 
 const routers = [
     {
         path: "/",
         name: "home",
-        component: ()=>import('@/views/home.vue')
+        component: Homepage
     }
 ]
 

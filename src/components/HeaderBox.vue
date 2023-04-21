@@ -1,6 +1,8 @@
 <template>
     <div class="title-box">
-        <img src="@/assets/icon/logo.svg">
+        <RouterLink to="/" id="mobile-hidden">
+            <img src="@/assets/icon/logo.svg">
+        </RouterLink>
         <SearchBox/>
         <HeaderFeaturesBox/>
     </div>

@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router';
 import HeaderBox from '@/components/HeaderBox.vue'
+import MobileFooter from './components/MobileFooter.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import HeaderBox from '@/components/HeaderBox.vue'
   <RouterView>
 
   </RouterView>
+  <!-- <MobileFooter/> -->
 </template>
 
 <style scoped>
