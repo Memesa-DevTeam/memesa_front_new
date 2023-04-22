@@ -1,7 +1,8 @@
 <template>
     <h1 class="page-title">我</h1>
-    <UserInfoCard :userID="inputUserId"></UserInfoCard>
-    <Tabs centered>
+    <LoginWarning v-if="!isLoggedIn"></LoginWarning>
+    <UserInfoCard :userID="inputUserId" v-if="isLoggedIn"></UserInfoCard>
+    <Tabs centered v-if="isLoggedIn">
         <TabPane key="1" tab="首页">
             
         </TabPane>
@@ -18,12 +19,20 @@
 </template>
 <script setup>
 import UserInfoCard from '../../components/UserInfoCard.vue';
+import LoginWarning from '../../components/Login/LoginWarning.vue';
 import { Tabs, TabPane } from 'ant-design-vue';
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute()
-
 const inputUserId = ref(route.params.id)
+const isLoggedIn = computed(()=>{
+    if (localStorage.getItem("MEMESA_TOKEN") == null || localStorage.getItem("MEMESA_TOKEN") == undefined){
+        return false
+    }
+    else{
+        return true
+    }
+})
 
 </script>

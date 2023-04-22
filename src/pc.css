@@ -78,6 +78,28 @@
 }
 
 /* User Info Card */
+.login-warning-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: fit-content;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--gray-color);
+}
+.login-warning-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.login-warning-button{
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .user-info-card{
     margin: 5px;
     padding: 10px;

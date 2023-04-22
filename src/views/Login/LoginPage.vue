@@ -1,7 +1,7 @@
 <template>
     <div class="main-box">
         <div class="login-main-box">
-            <div class="login-left-box">
+            <div class="login-left-box" id="mobile-hidden">
 
             </div>
             <div class="login-right-box">

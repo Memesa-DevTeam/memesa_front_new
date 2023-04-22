@@ -1,13 +1,13 @@
 <template>
     <div class="user-info-card">
         <div class="user-info-left-content">
-            <Avatar :size="70" style="margin-right: 10px;"></Avatar>
+            <Avatar :size="70" style="margin-right: 10px;" :src="avatarAddr"></Avatar>
             <div class="user-info-content">
                 <h1 style="margin-bottom: 0px;">
-                    Username
+                    {{username}}
                 </h1>
                 <div id="mobile-hidden">
-                    Username, description, and other information will automatically gathered by the system.
+                    {{description}}
                 </div>
                 <div>
                     <b>ID: </b> {{ userID }}
@@ -37,18 +37,25 @@
             </Button>
         </div>
         <div v-if="showDescriptionBox">
-            Username, description, and other information will automatically gathered by the system.
+            {{description}}
         </div>
     </div>
 </template>
 <script setup>
 import { Avatar, Button } from 'ant-design-vue';
-import { defineEmits, defineProps, ref } from 'vue';
+import { computed, defineEmits, defineProps, ref } from 'vue';
+import user from '../js/user'
 
 const props = defineProps(['userID'])
 const localID = ref(localStorage.getItem("MEMESA_ID"))
 const isFollowing = ref(false)
 const showDescriptionBox = ref(false)
+
+const username = ref("Unknown")
+const description = ref("这个人很懒，什么也没写")
+const avatarAddr = computed(()=>{
+    return localStorage.getItem("MEMESA_AVATAR")
+})
 
 function handleSubscription(){
     isFollowing.value = !isFollowing.value
@@ -57,4 +64,15 @@ function handleSubscription(){
 function triggerDescriptionBox(){
     showDescriptionBox.value = !showDescriptionBox.value
 }
+
+async function getUserInfo(){
+    let result = await user.getUserBasicInfo(localID.value)
+    if (result == null){
+        return
+    }
+    username.value = result.username
+    description.value = result.description
+}
+
+getUserInfo()
 </script>

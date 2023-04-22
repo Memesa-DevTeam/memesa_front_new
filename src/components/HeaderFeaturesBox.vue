@@ -33,12 +33,12 @@
                     <img src="@/assets/icon/more.svg" :width="30" class="title-features-item" @click="triggerOverlay()">
                 </div>
             </Tooltip>
-            <RouterLink to="/profile">
+            <RouterLink :to="profileAddress">
                 <Tooltip>
                     <template #title>
                         用户中心
                     </template>
-                    <Avatar :size="40"></Avatar>
+                    <Avatar :size="40" :src="avatarAddress"></Avatar>
                 </Tooltip>
             </RouterLink>   
         </div>
@@ -72,9 +72,15 @@
 </template>
 <script setup>
 import { Avatar, Tooltip, Button } from 'ant-design-vue';
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const displayOverlayBox = ref(false)
+const avatarAddress = computed(()=>{
+    return localStorage.getItem("MEMESA_AVATAR")
+})
+const profileAddress = computed(()=>{
+    return "/profile/"+localStorage.getItem("MEMESA_ID")
+})
 
 function triggerOverlay(){
     console.log("Overlay function triggered")

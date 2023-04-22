@@ -1,6 +1,6 @@
 import axios from "axios"
 import QueryString from "qs"
-import avatar from "@/js/avatar"
+import avatar from "./avatar"
 
 function getUserBasicInfo (id) {
     return new Promise((res, rej) => {
@@ -53,7 +53,7 @@ function register (username, password, email){
     })
 }
 
-function login (username, password, keepAlive) {
+async function login (username, password, keepAlive) {
     return new Promise((res, rej) => {
         // generate metadata
         let data = {
@@ -61,6 +61,7 @@ function login (username, password, keepAlive) {
             "password": password,
             "keepAlive": keepAlive,
         }
+        console.log(data)
         // request
         axios({
             headers: {
@@ -73,6 +74,7 @@ function login (username, password, keepAlive) {
             console.log(info)
             const token = info.data.Data.token
             localStorage.setItem("MEMESA_TOKEN", token)
+            localStorage.setItem("MEMESA_ID", info.data.Data.id)
             // send a request to get the user avatar
             let avatarAddress = avatar.getUserAvatarAddress(username.value)
             localStorage.setItem("MEMESA_AVATAR", avatarAddress)
