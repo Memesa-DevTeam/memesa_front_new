@@ -9,7 +9,9 @@
         <Checkbox v-model:checked="agreementChecked">我已阅读并同意《用户服务条款与协议》</Checkbox>
         <div class="login-button-panel">
             <Button type="primary" class="login-button" @click="loginHandler()">登录</Button>
-            <Button class="login-button">注册</Button>
+            <RouterLink to="/visitorProtocol/register">
+                <Button class="login-button">注册</Button>
+            </RouterLink>
         </div>
     </div>
 </template>
