@@ -4,15 +4,15 @@ import * as path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // router config
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    }
-  },
   plugins: [vue()],
   server: {
     host: '0.0.0.0'
+  },
+  // router config
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    }
   },
   // less support
   css: {

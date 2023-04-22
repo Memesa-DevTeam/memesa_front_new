@@ -8,9 +8,24 @@ const routers = [
       component: Homepage
     },
     {
-      path: "/profile",
+      path: "/profile/:id",
       name: "profile",
       component: ()=>import('../views/User/ProfilePage.vue')
+    },
+    {
+      path: "/visitorProtocol",
+      name: "login and register",
+      component: ()=>import('../views/Login/LoginPage.vue'),
+      children: [
+        {
+          path: 'login',
+          component: ()=>import('../components/Login/LoginComponent.vue')
+        },
+        {
+          path: 'register',
+          component: ()=>import('../components/Login/RegisterComponent.vue')
+        },
+      ]
     }
 ]
 
