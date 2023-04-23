@@ -2,7 +2,9 @@
 :root{
     /*Color Definitions*/
     --main-color: #ff9900;
+    --gray-color-lighter: #f7f7f7f5;
     --gray-color: #ebebeb;
+    --gray-color-deeper: #dcdcdc;
     --search-box-width: 600px;
 }
 #pc-hidden{
@@ -83,6 +85,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: auto;
     height: fit-content;
     margin: 5px;
@@ -184,4 +187,29 @@
 }
 .input{
     margin: 5px !important; 
+}
+
+/* List Item */
+.list-main-box{
+    margin: 5px;
+    padding: 7px;
+    padding-left: 15px;
+    border-radius: 5px;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gray-color-lighter);
+    transition: background-color 0.5s;
+    font-size: larger;
+    /* font-weight: 600; */
+    cursor: pointer;
+}
+.list-main-box:hover{
+    background-color: var(--gray-color-deeper);
+}
+
+/* Profile Tabs */
+.tab-section{
+    position: sticky;
 }

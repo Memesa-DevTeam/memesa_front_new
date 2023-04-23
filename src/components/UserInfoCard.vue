@@ -66,7 +66,7 @@ function triggerDescriptionBox(){
 }
 
 async function getUserInfo(){
-    let result = await user.getUserBasicInfo(localID.value)
+    let result = await user.getUserBasicInfo(props.userID)
     if (result == null){
         return
     }

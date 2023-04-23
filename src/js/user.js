@@ -167,6 +167,13 @@ function deleteUser(){
     })
 }
 
+function logout(){
+    return new Promise((res, rej) => {
+        localStorage.clear()
+        res(true)
+    })
+}
+
 export default{
     getUserBasicInfo,
     register,
@@ -174,4 +181,5 @@ export default{
     getUserInfo,
     modifyBasicUserInformation,
     deleteUser,
+    logout
 }

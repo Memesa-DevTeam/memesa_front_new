@@ -26,6 +26,7 @@ const username = ref("")
 const password = ref("")
 const agreementChecked = ref(false)
 
+// 屎山纪念碑
 async function loginHandler(){
     if (!agreementChecked.value){
         message.info("请先查阅并同意《用户服务条款与协议》")
