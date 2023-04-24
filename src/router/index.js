@@ -26,6 +26,21 @@ const routers = [
           component: ()=>import('../components/Login/RegisterComponent.vue')
         },
       ]
+    },
+    {
+      path: "/settings",
+      name: "settings",
+      component: ()=>import('../views/Settings/SettingsPage.vue'),
+      children: [
+        {
+          path: "",
+          component: ()=>import('../views/Settings/Navigation/Main.vue')
+        },
+        {
+          path: "user",
+          component: ()=>import('../views/Settings/Navigation/User.vue')
+        }
+      ]
     }
 ]
 

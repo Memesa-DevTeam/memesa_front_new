@@ -14,11 +14,14 @@
             关于
         </template>
     </ListSelection>
-    <ListSelection>
+    <RouterLink to="/settings" class="normal-link">
+        <ListSelection>
         <template #content>
             设置
         </template>
     </ListSelection>
+    </RouterLink>
+    
     <ListSelection @onclick="logout()">
         <template #content>
             退出登录

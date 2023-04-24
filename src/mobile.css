@@ -18,6 +18,9 @@
 .page-title{
     font-weight: 700;
 }
+.normal-link{
+    color: black;
+}
 /* Title Box Section */
 .title-box{
     display: flex;
@@ -247,4 +250,35 @@
 }
 .list-main-box:hover{
     background-color: var(--gray-color-deeper);
+}
+
+/* Settings */
+.settings-main-box{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.settings-main-subbox{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+.settings-pc-menu{
+    width: 20%;
+}
+.settings-content{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 0px;
+}
+.settings-content-view{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.settings-mobile-header{
+    padding-left: 0px;
 }
