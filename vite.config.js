@@ -13,6 +13,11 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
+      "/imgAPI": {
+        target: "https://sm.ms/api/v2",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/imgAPI/, ""),
+      },
     },
   },
   // router config
