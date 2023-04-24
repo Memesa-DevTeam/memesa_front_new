@@ -39,7 +39,15 @@ const routers = [
         {
           path: "user",
           component: ()=>import('../views/Settings/Navigation/User.vue')
-        }
+        },
+        {
+          path: "user/profile",
+          component: ()=>import('../views/Settings/User/ProfileSettings.vue')
+        },
+        {
+          path: "user/password",
+          component: ()=>import('../views/Settings/User/ProfileSettings.vue')
+        },
       ]
     }
 ]

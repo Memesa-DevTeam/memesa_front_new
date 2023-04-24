@@ -10,36 +10,52 @@
                     <template #title>
                         用户
                     </template>
-                    <MenuItem key="user/basicInfo">
-                        <template #icon>
-                            <img src="../../assets/icon/profile.svg" :width="'35px'">
-                        </template>
-                        用户名，简介与头像
-                    </MenuItem>
-                    <MenuItem key="user/password">
-                        <template #icon>
-                            <img src="../../assets/icon/password.svg" :width="'35px'">
-                        </template>
-                        密码与安全
-                    </MenuItem>
-                    <MenuItem key="user/logout">
-                        <template #icon>
-                            <img src="../../assets/icon/security.svg" :width="'35px'">
-                        </template>
-                        登录管理
-                    </MenuItem>
-                    <MenuItem key="user/agreement">
-                        <template #icon>
-                            <img src="../../assets/icon/agreement.svg" :width="'35px'">
-                        </template>
-                        用户服务协议与条款
-                    </MenuItem>
+                    <RouterLink to="/settings/user/profile" class="normal-link">
+                        <MenuItem key="user/basicInfo">
+                            <template #icon>
+                                <img src="../../assets/icon/profile.svg" :width="'35px'">
+                            </template>
+                            用户名，简介与头像
+                        </MenuItem>
+                    </RouterLink>
+                    <RouterLink to="/settings/user/password" class="normal-link">
+                        <MenuItem key="user/password">
+                            <template #icon>
+                                <img src="../../assets/icon/password.svg" :width="'35px'">
+                            </template>
+                            密码与安全
+                        </MenuItem>
+                    </RouterLink>
+                    <RouterLink to="/settings/security" class="normal-link">
+                        <MenuItem key="user/logout">
+                            <template #icon>
+                                <img src="../../assets/icon/security.svg" :width="'35px'">
+                            </template>
+                            登录管理
+                        </MenuItem>
+                    </RouterLink>
+                    <RouterLink to="/settings/user/agreement" class="normal-link">
+                        <MenuItem key="user/agreement">
+                            <template #icon>
+                                <img src="../../assets/icon/agreement.svg" :width="'35px'">
+                            </template>
+                            用户服务协议与条款
+                        </MenuItem>
+                    </RouterLink>
                 </SubMenu>
                 <SubMenu key="general">
+                    <template #icon>
+                        <img src="../../assets/icon/settings.svg" :width="'35px'">
+                    </template>
                     <template #title>
                         通用
                     </template>
-                    <MenuItem key="general/language">语言与地区</MenuItem>
+                    <MenuItem key="general/language">
+                        语言与地区
+                        <template #icon>
+                            <img src="../../assets/icon/language.svg" :width="'35px'">
+                        </template>
+                    </MenuItem>
                 </SubMenu>
             </Menu>
             <div class="settings-content">
