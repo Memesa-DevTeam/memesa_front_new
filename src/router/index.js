@@ -46,7 +46,7 @@ const routers = [
         },
         {
           path: "user/password",
-          component: ()=>import('../views/Settings/User/ProfileSettings.vue')
+          component: ()=>import('../views/Settings/User/PasswordSettings.vue')
         },
       ]
     }
