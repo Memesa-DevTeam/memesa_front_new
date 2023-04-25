@@ -26,7 +26,7 @@
                             密码与安全
                         </MenuItem>
                     </RouterLink>
-                    <RouterLink to="/settings/security" class="normal-link">
+                    <RouterLink to="/settings/user/security" class="normal-link">
                         <MenuItem key="user/logout">
                             <template #icon>
                                 <img src="../../assets/icon/security.svg" :width="'35px'">

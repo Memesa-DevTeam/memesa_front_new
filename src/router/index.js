@@ -48,6 +48,10 @@ const routers = [
           path: "user/password",
           component: ()=>import('../views/Settings/User/PasswordSettings.vue')
         },
+        {
+          path: "user/security",
+          component: ()=>import('../views/Settings/User/SecuritySettings.vue')
+        },
       ]
     }
 ]

@@ -174,6 +174,23 @@ function logout(){
     })
 }
 
+async function checkUserPassword(inputPassword){
+    return new Promise((res, rej) => {
+        getUserInfo(localStorage.getItem("MEMESA_TOKEN"))
+        .then(userInfo => {
+            if (userInfo == null){
+                res(false)
+            }
+            if (userInfo.password == inputPassword){
+                res(false)
+            }
+            else {
+                res (true)
+            }
+        })
+    })
+}
+
 export default{
     getUserBasicInfo,
     register,
@@ -181,5 +198,6 @@ export default{
     getUserInfo,
     modifyBasicUserInformation,
     deleteUser,
-    logout
+    logout,
+    checkUserPassword
 }
