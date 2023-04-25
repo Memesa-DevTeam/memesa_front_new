@@ -11,14 +11,16 @@
                 </template>
             </ListSelection>
         </RouterLink>
-        <ListSelection>
-            <template #image>
-                <img src="../../../assets/icon/settings.svg"  style="margin-right: 15px;">
-            </template>
-            <template #content>
-                通用
-            </template>
-        </ListSelection>
+        <RouterLink class="normal-link" to="/settings/general">
+            <ListSelection>
+                <template #image>
+                    <img src="../../../assets/icon/settings.svg"  style="margin-right: 15px;">
+                </template>
+                <template #content>
+                    通用
+                </template>
+            </ListSelection>
+        </RouterLink>
     </div>
 </template>
 <script setup>

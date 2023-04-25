@@ -52,6 +52,18 @@ const routers = [
           path: "user/security",
           component: ()=>import('../views/Settings/User/SecuritySettings.vue')
         },
+        {
+          path: "user/agreement",
+          component: ()=>import('../views/Settings/User/UserAgreementSettings.vue')
+        },
+        {
+          path: "general",
+          component: ()=>import('../views/Settings/Navigation/General.vue')
+        },
+        {
+          path: "general/language",
+          component: ()=>import('../views/Settings/General/LanguageSettings.vue')
+        },
       ]
     }
 ]

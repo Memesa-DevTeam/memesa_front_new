@@ -50,12 +50,14 @@
                     <template #title>
                         通用
                     </template>
-                    <MenuItem key="general/language">
-                        语言与地区
-                        <template #icon>
-                            <img src="../../assets/icon/language.svg" :width="'35px'">
-                        </template>
-                    </MenuItem>
+                    <RouterLink class="normal-link" to="/settings/general/language">
+                        <MenuItem key="general/language">
+                            语言与地区
+                            <template #icon>
+                                <img src="../../assets/icon/language.svg" :width="'35px'">
+                            </template>
+                        </MenuItem>
+                    </RouterLink>
                 </SubMenu>
             </Menu>
             <div class="settings-content">
