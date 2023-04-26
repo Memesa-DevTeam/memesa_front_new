@@ -5,9 +5,9 @@ const i18n = createI18n({
     locale: localStorage.getItem("MEMESA_LANGUAGE"),
     fallbackLocale: initializeLanguagePre(),
     messages: {
-        en_us: require("../language/en_us.json"),
-        zh_cn: require("../language/zh_cn.json"),
-        zh_tw: require("../language/zh_tw.json"),
+        en_us: ()=>import('../language/en_us.json'),
+        zh_cn: ()=>import('../language/zh_cn.json'),
+        zh_tw: ()=>import('../language/zh_tw.json'),
     },
     legacy: false
 })
