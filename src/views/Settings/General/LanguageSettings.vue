@@ -13,7 +13,6 @@
             <SelectOption value="en_us">English</SelectOption>
         </Select>
     </div>
-
 </div>
 </template>
 <script setup>

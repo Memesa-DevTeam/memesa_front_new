@@ -127,6 +127,7 @@ function getUserMoments(id){
             data: qs.stringify(targetData)
         }).then(data => {
             if (data.data.Code != 200){
+                console.log(data)
                 res({status: false, data: undefined})
             }
             res({status: true, data: data})

@@ -75,6 +75,7 @@ async function login (username, password, keepAlive) {
             const token = info.data.Data.token
             localStorage.setItem("MEMESA_TOKEN", token)
             localStorage.setItem("MEMESA_ID", info.data.Data.id)
+            localStorage.setItem("MEMESA_USERNAME", username)
             // send a request to get the user avatar
             let avatarAddress = avatar.getUserAvatarAddress(username.value)
             localStorage.setItem("MEMESA_AVATAR", avatarAddress)
