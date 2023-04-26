@@ -13,7 +13,7 @@
         <div class="row-display" style="margin: 10px">
             <ImagePreviewGroup>
                 <div v-for="i in imgList" :key="i">
-                    <Image :src="i" v-if="i != '0'"></Image>
+                    <Image :src="i" :width="125" v-if="i != '0'"></Image>
                 </div>
             </ImagePreviewGroup>
         </div>

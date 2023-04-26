@@ -65,6 +65,17 @@ const routers = [
           component: ()=>import('../views/Settings/General/LanguageSettings.vue')
         },
       ]
+    },
+    {
+      path: "/moments",
+      name: "moments",
+      component: ()=>import('../views/Moments/MomentsHomepage.vue'),
+      children: [
+        {
+          path: "",
+          component: ()=>import('../views/Moments/Occupier.vue')
+        }
+      ]
     }
 ]
 
