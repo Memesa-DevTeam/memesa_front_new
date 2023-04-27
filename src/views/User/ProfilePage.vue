@@ -10,7 +10,7 @@
             
         </TabPane>
         <TabPane key="3" tab="动态">
-            <MomentsAutoList :source="localUserId" :show-private="1"/>
+            <MyMoments/>
         </TabPane>
         <TabPane key="4" tab="素材">
             
@@ -26,10 +26,8 @@ import LoginWarning from '../../components/Login/LoginWarning.vue';
 import { Tabs, TabPane, Divider } from 'ant-design-vue';
 import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
-import ListSelection from '../../components/ListSelection.vue';
 import MorePage from './MorePage.vue';
-
-import MomentsAutoList from '../../components/Moments/MomentsAutoList.vue';
+import MyMoments from '../Moments/MyMoments.vue';
 
 const route = useRoute()
 const inputUserId = ref(route.params.id)

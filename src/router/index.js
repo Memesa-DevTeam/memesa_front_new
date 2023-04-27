@@ -73,8 +73,16 @@ const routers = [
       children: [
         {
           path: "",
-          component: ()=>import('../views/Moments/Occupier.vue')
-        }
+          component: ()=>import('../views/Moments/Community.vue')
+        },
+        {
+          path: "subscribe",
+          component: ()=>import('../views/Moments/subscribe.vue')
+        },
+        {
+          path: "myMoments",
+          component: ()=>import('../views/Moments/MyMoments.vue')
+        },
       ]
     }
 ]

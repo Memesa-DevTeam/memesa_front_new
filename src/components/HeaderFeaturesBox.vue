@@ -5,7 +5,7 @@
                 <template #title>
                     动态
                 </template>
-                <RouterLink to="" id="mobile-hidden">
+                <RouterLink to="/moments" id="mobile-hidden">
                     <img src="@/assets/icon/moment.svg" class="title-features-item">
                 </RouterLink>
             </Tooltip>
@@ -47,7 +47,7 @@
                 <template #title>
                     动态
                 </template>
-                <RouterLink to="" id="pc-hidden">
+                <RouterLink to="/moments" id="pc-hidden">
                     <img src="@/assets/icon/momentsFilled.svg" :width="25" class="title-features-item">
                 </RouterLink>
             </Tooltip>
