@@ -1,4 +1,4 @@
-import axios from "axios"
+import axios, { Axios } from "axios"
 import qs from 'qs'
 
 let username = "kimsseTheWolf"
@@ -189,10 +189,35 @@ function deleteMoments(uuid){
     })
 }
 
+function getSingleMoment(uuid){
+    return new Promise((res, rej) => {
+        let sendData = {
+            "uuid": uuid
+        }
+        axios({
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            method: "post",
+            url: "/api/moments/get",
+            data: qs.stringify(sendData)
+        }).then(data => {
+            if (data.data.Code != 200){
+                res(null)
+            }
+            res(data.data.Data)
+        }).catch(err => {
+            console.log(err)
+            res(null)
+        })
+    })
+}
+
 export default{
     uploadMomentImg,
     uploadMomentToDatabase,
     getUserMoments,
     deleteMoments,
-    getUserSubscriptionMoments
+    getUserSubscriptionMoments,
+    getSingleMoment
 }

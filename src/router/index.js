@@ -72,6 +72,10 @@ const routers = [
       component: ()=>import('../views/Moments/MomentsHomepage.vue'),
       children: [
         {
+          path: ":uuid",
+          component: ()=>import('../views/Moments/MomentsDetails.vue'),
+        },
+        {
           path: "",
           component: ()=>import('../views/Moments/Community.vue')
         },
@@ -84,6 +88,11 @@ const routers = [
           component: ()=>import('../views/Moments/MyMoments.vue')
         },
       ]
+    },
+    {
+      path: "/moments/details/:uuid",
+      name: "momentsDetails",
+      component: ()=>import('../views/Moments/MomentsDetails.vue'),
     }
 ]
 

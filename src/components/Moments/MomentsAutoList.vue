@@ -8,7 +8,7 @@
             </Empty>
         </div>
         <div v-for="i in momentsList" :key="momentsList">
-            <MomentElementBox :img-list="[i.img1, i.img2, i.img3, i.img4]" :target-user-id="targetId" :moment-uuid="i.uuid" :is-public="i.public" :release-date="i.date">
+            <MomentElementBox :img-list="[i.img1, i.img2, i.img3, i.img4]" :target-user-id="targetId" :moment-uuid="i.uid" :is-public="i.public" :release-date="i.date">
                 <template #content>
                     {{ i.content }}
                 </template>

@@ -2,7 +2,7 @@
     <div class="row-display">
         <Button type="primary">上传新动态</Button>
     </div>
-    <MomentsAutoList :source="localUserId" :show-private="1"/>
+    <MomentsAutoList :source="localUserId" :show-private="true"/>
 </template>
 <script setup>
 import { Button } from 'ant-design-vue';
