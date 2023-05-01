@@ -10,7 +10,7 @@
             
         </TabPane>
         <TabPane key="3" tab="动态">
-            <MyMoments/>
+            <MomentsAutoList :source="inputUserId" :showPrivate="true"></MomentsAutoList>
         </TabPane>
         <TabPane key="4" tab="素材">
             
@@ -28,6 +28,7 @@ import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import MorePage from './MorePage.vue';
 import MyMoments from '../Moments/MyMoments.vue';
+import MomentsAutoList from '../../components/Moments/MomentsAutoList.vue';
 
 const route = useRoute()
 const inputUserId = ref(route.params.id)

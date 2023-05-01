@@ -7,6 +7,7 @@
         :moment-uuid="momentsData.uuid"
         :release-date="momentsData.date"
         :target-user-id="momentsData.userid"
+        style="background-color: #f7f7f7f5;"
         >
             <template #content>
                 {{ momentsData.content }}
