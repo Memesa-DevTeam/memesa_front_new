@@ -12,6 +12,8 @@
                 {{ momentsData.content }}
             </template>
         </MomentElementBox>
+        <h2 style="margin-top: 7px;">评论</h2>
+        <CommentInputBox></CommentInputBox>
     </div>
     
 </template>
@@ -21,6 +23,7 @@ import { useRoute } from 'vue-router';
 import { ref } from 'vue';
 import MomentElementBox from '../../components/Moments/MomentElementBox.vue';
 import moments from '../../js/moments';
+import CommentInputBox from '../../components/Comments/CommentInputBox.vue';
 
 const route = useRoute()
 const targetUUID = ref(route.params.uuid)

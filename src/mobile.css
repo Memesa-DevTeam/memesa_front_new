@@ -327,3 +327,13 @@
     height: fit-content;
     margin: 5px;
 }
+
+/* Comments Styles */
+.comment-input-box{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--gray-color-lighter);
+}
